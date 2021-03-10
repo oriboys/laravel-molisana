@@ -98,6 +98,24 @@ main .products .lista-prodotti .prodotto:hover .hover-prodotto {
   display: flex;
 }
 
+main .news {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+main .news ul img {
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+main .news ul li {
+  list-style: none;
+  color: #b2282f;
+  padding-bottom: 10px;
+}
+
 footer {
   width: 100%;
   height: 100px;

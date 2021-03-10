@@ -59,4 +59,22 @@ main{
       }
     }
   }
+
+  & .news {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    // height: calc(100vh - 300px);
+
+    & ul img {
+      height: 50px;
+      padding-bottom: 10px;
+    }
+    & ul li {
+      list-style: none;
+      color: #b2282f;
+      padding-bottom: 10px;
+    }
+  }
 }
