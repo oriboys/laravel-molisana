@@ -11,4 +11,52 @@ main{
     justify-content: center;
     align-items: center;
   }
+
+  & .products{
+    padding-bottom: 20px;
+
+    & .lista-prodotti{
+      display: flex;
+      flex-wrap: wrap;
+
+      & .prodotto{
+        width: calc( 100% / 3 - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        position: relative;
+        height: 260px;
+        // background-color: yellow;
+
+          & img {
+            width: 100%;
+            height: 100%;
+
+          }
+
+
+        & a .hover-prodotto{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 100%;
+          height: 100%;
+          background-color: #d2e1e6;
+          opacity: 0.5;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          // display: none;
+          & p{
+            font-size: 14px;
+            color: rgb(105, 9, 101);
+          }
+        }
+        &:hover .hover-prodotto{
+          display: flex;
+        }
+      }
+    }
+  }
 }
