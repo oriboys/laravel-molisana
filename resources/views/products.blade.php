@@ -3,20 +3,24 @@
 @section('content')
 <div class="products">
   <div class="lista-prodotti">
-    @foreach ($formati as $singolo)
-    <div class="prodotto">
+    @foreach ($formati as $key => $singolo)
+    <h2>{{$key}}</h2>
+      @foreach ($singolo as $pasta)
+        <div class="prodotto">
 
-        <img src="{{$singolo['src']}}" alt="">
+          <img src="{{$pasta['src']}}" alt="">
 
-        <a href="#">
-          <div class="hover-prodotto">
+            <a href="#">
+              <div class="hover-prodotto">
 
-            <p>{{$singolo['titolo']}} - {{$singolo['tipo']}}</p>
-          </div>
+                <p>{{$pasta['titolo']}} - {{$pasta['tipo']}}</p>
+              </div>
 
-         </a>
+            </a>
     </div>
     @endforeach
+    @endforeach
+
   </div>
 </div>
 @endsection
