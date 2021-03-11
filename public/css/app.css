@@ -124,6 +124,53 @@ main .news ul li {
   padding-bottom: 10px;
 }
 
+main .detailes {
+  width: 100%;
+  text-align: center;
+}
+
+main .detailes h1 {
+  color: #b2282f;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+main .detailes .immagini {
+  display: flex;
+}
+
+main .detailes .immagini img {
+  width: 50%;
+}
+
+main .detailes .info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main .detailes .info ul {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-around;
+}
+
+main .detailes .info ul li {
+  list-style: none;
+  font-size: 40px;
+  color: #b2282f;
+}
+
+main .detailes .desc {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 24px;
+  color: white;
+  text-align: left;
+  line-height: 40px;
+}
+
 footer {
   width: 100%;
   height: 100px;
