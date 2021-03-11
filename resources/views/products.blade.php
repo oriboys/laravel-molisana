@@ -3,7 +3,7 @@
 @section('content')
 <div class="products">
   <div class="lista-prodotti">
-    @foreach ($pasta as $singolo)
+    @foreach ($formati as $singolo)
     <div class="prodotto">
 
         <img src="{{$singolo['src']}}" alt="">
