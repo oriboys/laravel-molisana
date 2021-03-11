@@ -19,6 +19,14 @@ main{
       display: flex;
       flex-wrap: wrap;
 
+      & h2 {
+        width: 100%;
+        padding-top: 15px;
+        padding-top: 15px;
+        margin-left: 10px;
+        color: #b2282f;
+      }
+
       & .prodotto{
         width: calc( 100% / 3 - 20px);
         margin-left: 10px;

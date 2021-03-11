@@ -61,6 +61,14 @@ main .products .lista-prodotti {
   flex-wrap: wrap;
 }
 
+main .products .lista-prodotti h2 {
+  width: 100%;
+  padding-top: 15px;
+  padding-top: 15px;
+  margin-left: 10px;
+  color: #b2282f;
+}
+
 main .products .lista-prodotti .prodotto {
   width: calc( 100% / 3 - 20px);
   margin-left: 10px;

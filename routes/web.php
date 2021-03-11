@@ -48,6 +48,17 @@ Route::get('/prodotti', function () {
 
     return view('products', $data);
 })->name('pagina-prodotti');
+
+Route::get('/descrizione/{id}', function ($id) {
+
+  $pasta = config('pasta');
+  $prodotto = $pasta[$id];
+  $data = ['prodotto' => $prodotto];
+
+
+    return view('description', $data);
+})->name('pagina-descrizione');
+
 Route::get('/notizie', function () {
     $pasta = config('pasta');
   $data = ['formati' => $pasta];
