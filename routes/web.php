@@ -18,6 +18,9 @@ Route::get('/', function () {
 })->name('pagina-home');
 Route::get('/prodotti', function () {
   $pasta = config('pasta');
+  // $collection = collect($pasta);
+  // $prova = $collection->where('tipo', 'corta');
+  // dd($prova);
 
     $pasta_lunga = array_filter($pasta, function($element){
       // dump($element);
@@ -52,11 +55,17 @@ Route::get('/prodotti', function () {
 Route::get('/descrizione/{id}', function ($id) {
 
   $pasta = config('pasta');
-  $prodotto = $pasta[$id];
-  $data = ['prodotto' => $prodotto];
 
 
+
+  if (is_numeric($id) && $id >= 0 && $id < count($pasta)) {
+    $prodotto = $pasta[$id];
+    $data = ['prodotto' => $prodotto];
     return view('description', $data);
+  } else {
+    abort('404');
+  }
+
 })->name('pagina-descrizione');
 
 Route::get('/notizie', function () {
